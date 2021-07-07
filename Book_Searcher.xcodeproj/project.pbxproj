@@ -14,6 +14,8 @@
 		04E9419426963C3200A51E50 /* Book_SearcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9419326963C3200A51E50 /* Book_SearcherUITests.swift */; };
 		04E941B526963CE300A51E50 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E941B326963CE300A51E50 /* SearchVC.swift */; };
 		04E941B626963CE300A51E50 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E941B426963CE300A51E50 /* SearchVC.xib */; };
+		04E941BC2696495300A51E50 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E941BA2696495300A51E50 /* BookCell.swift */; };
+		04E941BD2696495300A51E50 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E941BB2696495300A51E50 /* BookCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		04E9419526963C3200A51E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E941B326963CE300A51E50 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		04E941B426963CE300A51E50 /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		04E941BA2696495300A51E50 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		04E941BB2696495300A51E50 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,13 @@
 		04E9417026963C3000A51E50 /* Book_Searcher */ = {
 			isa = PBXGroup;
 			children = (
+				04E941C126965BF700A51E50 /* Model */,
+				04E941C226965C0200A51E50 /* View */,
+				04E941C326965C1400A51E50 /* ViewModel */,
 				04E9417126963C3000A51E50 /* AppDelegate.swift */,
 				04E9417A26963C3200A51E50 /* Assets.xcassets */,
 				04E9417C26963C3200A51E50 /* LaunchScreen.storyboard */,
 				04E9417F26963C3200A51E50 /* Info.plist */,
-				04E941B326963CE300A51E50 /* SearchVC.swift */,
-				04E941B426963CE300A51E50 /* SearchVC.xib */,
 			);
 			path = Book_Searcher;
 			sourceTree = "<group>";
@@ -123,6 +128,31 @@
 				04E9419526963C3200A51E50 /* Info.plist */,
 			);
 			path = Book_SearcherUITests;
+			sourceTree = "<group>";
+		};
+		04E941C126965BF700A51E50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E941C226965C0200A51E50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E941B326963CE300A51E50 /* SearchVC.swift */,
+				04E941B426963CE300A51E50 /* SearchVC.xib */,
+				04E941BA2696495300A51E50 /* BookCell.swift */,
+				04E941BB2696495300A51E50 /* BookCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04E941C326965C1400A51E50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E941BD2696495300A51E50 /* BookCell.xib in Resources */,
 				04E9417E26963C3200A51E50 /* LaunchScreen.storyboard in Resources */,
 				04E9417B26963C3200A51E50 /* Assets.xcassets in Resources */,
 				04E941B626963CE300A51E50 /* SearchVC.xib in Resources */,
@@ -255,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E941BC2696495300A51E50 /* BookCell.swift in Sources */,
 				04E941B526963CE300A51E50 /* SearchVC.swift in Sources */,
 				04E9417226963C3000A51E50 /* AppDelegate.swift in Sources */,
 			);
