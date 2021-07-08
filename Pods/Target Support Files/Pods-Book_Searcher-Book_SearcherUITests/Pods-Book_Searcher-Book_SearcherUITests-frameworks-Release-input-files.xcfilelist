@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Book_Searcher-Book_SearcherUITests/Pods-Book_Searcher-Book_SearcherUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

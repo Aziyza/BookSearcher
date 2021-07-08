@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,34 +22,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="389" height="150"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="DSu-IO-xel">
-                                <rect key="frame" x="20" y="15" width="96" height="120"/>
+                                <rect key="frame" x="20" y="20" width="88" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DSu-IO-xel" secondAttribute="height" multiplier="0.8:1" id="dcn-Lb-wcF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planning Extreme Programming" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIO-d4-GpX">
-                                <rect key="frame" x="136" y="25" width="233" height="43"/>
+                                <rect key="frame" x="128" y="20" width="241" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" red="0.23921568630000001" green="0.1529411765" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.21960784310000001" green="0.21176470589999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Van-Roy, Seif Haridi, Seif (Chief Scientist Haridi, Swedish Inst of Computer Science)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpW-uQ-PgI">
-                                <rect key="frame" x="136" y="80" width="233" height="43"/>
+                                <rect key="frame" x="128" y="75" width="241" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="DSu-IO-xel" secondAttribute="bottom" constant="15" id="0Do-6F-7aB"/>
                             <constraint firstItem="MpW-uQ-PgI" firstAttribute="leading" secondItem="DSu-IO-xel" secondAttribute="trailing" constant="20" id="8it-F3-fHj"/>
                             <constraint firstAttribute="trailing" secondItem="MIO-d4-GpX" secondAttribute="trailing" constant="20" id="Hyb-Cy-ATu"/>
-                            <constraint firstItem="DSu-IO-xel" firstAttribute="top" secondItem="YOX-Mz-f7Y" secondAttribute="top" constant="15" id="Ihn-jm-SFR"/>
+                            <constraint firstItem="DSu-IO-xel" firstAttribute="top" secondItem="YOX-Mz-f7Y" secondAttribute="top" constant="20" symbolic="YES" id="Ihn-jm-SFR"/>
                             <constraint firstItem="MIO-d4-GpX" firstAttribute="leading" secondItem="DSu-IO-xel" secondAttribute="trailing" constant="20" id="MuU-rH-ul2"/>
-                            <constraint firstItem="MIO-d4-GpX" firstAttribute="top" secondItem="DSu-IO-xel" secondAttribute="top" constant="10" id="Ne6-Ow-zzX"/>
+                            <constraint firstItem="MIO-d4-GpX" firstAttribute="top" secondItem="DSu-IO-xel" secondAttribute="top" id="Ne6-Ow-zzX"/>
                             <constraint firstItem="DSu-IO-xel" firstAttribute="centerY" secondItem="YOX-Mz-f7Y" secondAttribute="centerY" id="cfr-Ht-os8"/>
-                            <constraint firstItem="DSu-IO-xel" firstAttribute="leading" secondItem="YOX-Mz-f7Y" secondAttribute="leading" constant="20" id="d9O-gZ-0eA"/>
+                            <constraint firstItem="DSu-IO-xel" firstAttribute="leading" secondItem="YOX-Mz-f7Y" secondAttribute="leading" constant="20" symbolic="YES" id="d9O-gZ-0eA"/>
                             <constraint firstItem="MpW-uQ-PgI" firstAttribute="top" secondItem="MIO-d4-GpX" secondAttribute="bottom" constant="12" id="our-ag-z6g"/>
                             <constraint firstAttribute="trailing" secondItem="MpW-uQ-PgI" secondAttribute="trailing" constant="20" id="vAU-zU-JVq"/>
                         </constraints>
@@ -68,10 +68,18 @@
                 <constraint firstItem="YOX-Mz-f7Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tG4-iH-Xqk"/>
             </constraints>
             <size key="customSize" width="389" height="149"/>
+            <connections>
+                <outlet property="author" destination="MpW-uQ-PgI" id="SYs-z3-HTt"/>
+                <outlet property="image" destination="DSu-IO-xel" id="BL2-RX-fAK"/>
+                <outlet property="title" destination="MIO-d4-GpX" id="iYc-Rz-Dh7"/>
+            </connections>
             <point key="canvasLocation" x="63.04347826086957" y="84.375"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="book" width="128" height="161"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
