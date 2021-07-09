@@ -23,9 +23,6 @@ struct SearchViewModel {
     func getSearchResult(query: String, maxResult: Int = 20, startIndex: Int = 0) {
         
         var books = [BookModel]()
-        var title: String?
-        var thumbnail: String?
-        var desc: String?
         
         AF.request(BASE_URL + query + "&maxResults=" + "\(maxResult)", method: .get, encoding: JSONEncoding.default).response { (response) in
                         
@@ -38,17 +35,18 @@ struct SearchViewModel {
                         let items = jsonData["items"].arrayValue
                         
                         for item in items {
+                            var authors = [String]()
                             
-                            title = item["volumeInfo"]["title"].stringValue
+                            let title = item["volumeInfo"]["title"].stringValue
                             
                             let authorsArr = item["volumeInfo"]["authors"].arrayValue
-                            var authors = [String]()
                             for author in authorsArr { authors.append(author.string ?? "") }
                             
-                            thumbnail = item["volumeInfo"]["imageLinks"]["thumbnail"].string
-                            desc = item["volumeInfo"]["description"].string
-                            
+                            let thumbnail = item["volumeInfo"]["imageLinks"]["thumbnail"].string
+                            let desc = item["volumeInfo"]["description"].string
+                                                        
                             let bookModel = BookModel(thumbnail: thumbnail, title: title, authors: authors, description: desc)
+
                             books.append(bookModel)
                         }
                         if startIndex == 0 {

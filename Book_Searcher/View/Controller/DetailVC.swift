@@ -19,8 +19,13 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.image.load(urlString: book?.thumbnail)
-        self.bookTitle.text = book?.title
+        if book.thumbnail != nil {
+            self.image.load(urlString: book?.thumbnail)
+        } else { self.image.image = #imageLiteral(resourceName: "thumbnail") }
+        
+        if book.title != nil {
+            self.bookTitle.text = book?.title
+        } else { self.bookTitle.text = "No title" }
         
         if !book.authors.isEmpty {
             self.author.text = book?.authors.joined(separator: ", ")

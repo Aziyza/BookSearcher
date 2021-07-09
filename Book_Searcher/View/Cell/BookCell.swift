@@ -21,11 +21,19 @@ class BookCell: UICollectionViewCell {
     }
     
     func configure(model: BookModel) {
-        self.title.text = model.title
-        self.author.text = model.authors.joined(separator: ", ")
-        print("Model author: ", model.authors)
-        print(self.author.text)
-        self.image.load(urlString: model.thumbnail)
+        
+        if model.thumbnail != nil {
+            self.image.load(urlString: model.thumbnail)
+        } else { self.image.image = #imageLiteral(resourceName: "thumbnail") }
+        
+        if model.title != nil {
+            self.title.text = model.title
+        } else { self.title.text = "No title" }
+        
+        if !model.authors.isEmpty {
+            self.author.text = model.authors.joined(separator: ", ")
+        } else { self.author.text = "No author" }
+        
     }
     
 }
