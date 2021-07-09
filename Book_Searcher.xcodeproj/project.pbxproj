@@ -20,6 +20,8 @@
 		04E941E526975C6100A51E50 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E941E326975C6100A51E50 /* DetailVC.swift */; };
 		04E941E626975C6100A51E50 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E941E426975C6100A51E50 /* DetailVC.xib */; };
 		04E941F32697748700A51E50 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E941F22697748700A51E50 /* SearchViewModel.swift */; };
+		04E9423326987B2E00A51E50 /* ReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9423126987B2E00A51E50 /* ReloadView.swift */; };
+		04E9423426987B2E00A51E50 /* ReloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E9423226987B2E00A51E50 /* ReloadView.xib */; };
 		64F9E20C62EA2E364B97BAA3 /* Pods_Book_Searcher_Book_SearcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1362311373561834043AE6E /* Pods_Book_Searcher_Book_SearcherUITests.framework */; };
 		B88374D7B0A7FAC1718D4071 /* Pods_Book_Searcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18344C1EC2A598D9664F033A /* Pods_Book_Searcher.framework */; };
 		DA05FCFC2B42D3A6604422DD /* Pods_Book_SearcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F311453AEC291FC59916E487 /* Pods_Book_SearcherTests.framework */; };
@@ -62,6 +64,8 @@
 		04E941E326975C6100A51E50 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		04E941E426975C6100A51E50 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		04E941F22697748700A51E50 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		04E9423126987B2E00A51E50 /* ReloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadView.swift; sourceTree = "<group>"; };
+		04E9423226987B2E00A51E50 /* ReloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReloadView.xib; sourceTree = "<group>"; };
 		18344C1EC2A598D9664F033A /* Pods_Book_Searcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Searcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5746910CF30653DCB59ED0 /* Pods-Book_Searcher-Book_SearcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book_Searcher-Book_SearcherUITests.debug.xcconfig"; path = "Target Support Files/Pods-Book_Searcher-Book_SearcherUITests/Pods-Book_Searcher-Book_SearcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		359384477D2B6AAC806CD54C /* Pods-Book_SearcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book_SearcherTests.release.xcconfig"; path = "Target Support Files/Pods-Book_SearcherTests/Pods-Book_SearcherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 			children = (
 				04E941BA2696495300A51E50 /* BookCell.swift */,
 				04E941BB2696495300A51E50 /* BookCell.xib */,
+				04E9423126987B2E00A51E50 /* ReloadView.swift */,
+				04E9423226987B2E00A51E50 /* ReloadView.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 				04E941BD2696495300A51E50 /* BookCell.xib in Resources */,
 				04E9417E26963C3200A51E50 /* LaunchScreen.storyboard in Resources */,
 				04E9417B26963C3200A51E50 /* Assets.xcassets in Resources */,
+				04E9423426987B2E00A51E50 /* ReloadView.xib in Resources */,
 				04E941B626963CE300A51E50 /* SearchVC.xib in Resources */,
 				04E941E626975C6100A51E50 /* DetailVC.xib in Resources */,
 			);
@@ -466,6 +473,7 @@
 				04E941F32697748700A51E50 /* SearchViewModel.swift in Sources */,
 				04E941E526975C6100A51E50 /* DetailVC.swift in Sources */,
 				04E941BC2696495300A51E50 /* BookCell.swift in Sources */,
+				04E9423326987B2E00A51E50 /* ReloadView.swift in Sources */,
 				04E941B526963CE300A51E50 /* SearchVC.swift in Sources */,
 				04E941CD26974B3200A51E50 /* BookModel.swift in Sources */,
 				04E9417226963C3000A51E50 /* AppDelegate.swift in Sources */,

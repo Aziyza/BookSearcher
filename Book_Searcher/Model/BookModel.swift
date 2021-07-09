@@ -8,8 +8,8 @@
 import UIKit
 
 struct BookModel {
-    let thumbnail: String
-    let title: String
+    let thumbnail: String?
+    let title: String?
     let authors: [String]
-    let description: String = ""
+    let description: String?
 }

@@ -8,6 +8,7 @@ target 'Book_Searcher' do
   # Pods for Book_Searcher
    pod 'Alamofire'
    pod 'SwiftyJSON'
+   pod 'Kingfisher', '~> 6.0'
 
   target 'Book_SearcherTests' do
     inherit! :search_paths
