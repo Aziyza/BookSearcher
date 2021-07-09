@@ -23,6 +23,8 @@ class BookCell: UICollectionViewCell {
     func configure(model: BookModel) {
         self.title.text = model.title
         self.author.text = model.authors.joined(separator: ", ")
+        print("Model author: ", model.authors)
+        print(self.author.text)
         self.image.load(urlString: model.thumbnail)
     }
     

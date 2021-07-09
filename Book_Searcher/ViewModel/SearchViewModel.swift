@@ -24,7 +24,6 @@ struct SearchViewModel {
         
         var books = [BookModel]()
         var title: String?
-        var authors = [String]()
         var thumbnail: String?
         var desc: String?
         
@@ -34,12 +33,18 @@ struct SearchViewModel {
                 case .success(let data):
                     if data != nil {
                         let jsonData = JSON(data!)
+                        
                         let totalItems = jsonData["totalItems"].intValue
                         let items = jsonData["items"].arrayValue
+                        
                         for item in items {
+                            
                             title = item["volumeInfo"]["title"].stringValue
+                            
                             let authorsArr = item["volumeInfo"]["authors"].arrayValue
+                            var authors = [String]()
                             for author in authorsArr { authors.append(author.string ?? "") }
+                            
                             thumbnail = item["volumeInfo"]["imageLinks"]["thumbnail"].string
                             desc = item["volumeInfo"]["description"].string
                             
