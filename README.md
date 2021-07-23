@@ -9,4 +9,4 @@ BookSearcher application allows to search books using Google API
 ```
 2.Open the project, build and run using XCODE (tested in Version 12.4)
 
-![](https://github.com/Aziyza/BookSearcher/blob/master/Book_Searcher.gif)
+![](https://github.com/Aziyza/BookSearcher/blob/master/Book_Searcher.gif =300x600)
