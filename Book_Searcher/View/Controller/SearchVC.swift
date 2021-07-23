@@ -43,7 +43,7 @@ class SearchVC: UIViewController {
         let bgView = UIImageView(image: #imageLiteral(resourceName: "book"))
         bgView.contentMode = .scaleAspectFill
         collectionView.backgroundView = bgView
-                
+               
     }
 }
 
